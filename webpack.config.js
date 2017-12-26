@@ -1,3 +1,4 @@
+
 var path = require('path')
 var webpack = require('webpack')
 
@@ -21,6 +22,9 @@ module.exports = {
         use:[ 
           {
             loader:'html-loader'
+          },
+          {
+            loader:'html-withimg-loader'
           }
         ]
       },
@@ -71,6 +75,23 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        // use: "file-loader?name=[name].[ext]&outputPath=images/"
+        use:[
+          {
+            loader:'url-loader',
+            options:{
+              limit:10000,
+              name:'images/[name]-[hash:5].[ext]',
+            }
+          },
+          // {
+          //  loader: 'img-loader'
+          //  // loader:'image-webpack-loader' 
+          // }
+        ]
       }
     ]
   },
