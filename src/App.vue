@@ -9,8 +9,8 @@
 
     <slot></slot>
   </div>
-</template>
- -->
+</template> -->
+
 <template>
   <div class="container">
     <div class="search">
@@ -20,17 +20,38 @@
         </form>
       </a>
     </div>
-    <div class="nav">
+    <div class="nav-wraper">
       <swiperNav></swiperNav>
       <span class="category"></span>
     </div>
-    <div class="banner">
+    <div class="banner-wraper">
       <swiperBanner></swiperBanner>
+    </div>
+    <div class="topic-wraper">
+      <div class="left"><a href="#"><img src="./assets/images/1.png"></a></div>
+      <div class="right">
+        <div class="top"><a href="#"><img src="./assets/images/2.png"></a></div>
+        <div class="bottom">
+          <div class="bottom-1"><a href="#"><img src="./assets/images/3.png"></a></div>
+          <div class="bottom-2"><a href="#"><img src="./assets/images/4.png"></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="list-wraper">
+      <ul>
+        <li>
+          <v-link href="/">精选</v-link>
+          <v-link href="/about">销量</v-link>
+          <v-link href="/about">最新</v-link>
+          <v-link href="/about">价格</v-link>
+        </li>
+      </ul>
+      <slot></slot>
     </div>
   </div>
 </template>
 <script>
-  
+  require('./assets/scss/app.scss') 
   import VLink from './components/VLink.vue'
   import swiperNav from './components/swiper-nav.vue'
   import swiperBanner from './components/swiper-banner.vue'
@@ -42,9 +63,3 @@
     }
   }
 </script>
-
-<style>
-  body{margin: 0;}
-  .banner{width: 100%;height: 1.5rem;}
-  .banner img{width: 100%;height: 100%;}
-</style>
