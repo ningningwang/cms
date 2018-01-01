@@ -1,4 +1,6 @@
 export default {
   '/': 'Home',
-  '/about': 'About'
+  '/about': 'About',
+  '/all':'All.vue',
+  '/ladies':'Ladies'
 }

@@ -13,17 +13,18 @@
 
 <template>
   <div class="container">
-    <div class="search">
+    <div class="search-wraper">
       <a href="#">
         <form>
-          <input type="search" disabled="disabled" placeholder="立即查找独家优惠券">
+          <div class="placeholder">
+            <button type="button"></button>
+            <span>立即查找独家优惠券</span>
+          </div>
+          <input type="search" disabled="disabled">
         </form>
       </a>
     </div>
-    <div class="nav-wraper">
-      <swiperNav></swiperNav>
-      <span class="category"></span>
-    </div>
+    <swiperNav></swiperNav>
     <div class="banner-wraper">
       <swiperBanner></swiperBanner>
     </div>
@@ -37,6 +38,7 @@
         </div>
       </div>
     </div>
+
     <div class="list-wraper">
       <ul>
         <li>

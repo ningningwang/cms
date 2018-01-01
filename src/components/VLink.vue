@@ -38,7 +38,6 @@
 </script>
 
 <style scoped>
-  .active {
-    color: cornflowerblue;
-  }
+  a{display: inline-block;padding: 0 .2rem;color: #333;}
+  .active {color: #FE312A;border-bottom: 1px #FE312A solid;} 
 </style>
