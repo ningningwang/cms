@@ -40,9 +40,9 @@
   }
 </script>
 <style>
-  .nav-wraper{width:100%;height:42px;line-height:40px;position:fixed;top:44px;z-index: 100;background: #fff;}
-  .icon-category{width:38px;height:24px;border-left:1px #d8d8d8 solid;display: block;position: absolute;right: 0;top: 9px;z-index: 101;background: url('../assets/images/icon/category.png') no-repeat #fff center;background-size: 13px 14px;}
-  .swiper-slide{text-align: center;}
+.nav-wraper{width:100%;height:41px;line-height:40px;position:fixed;top:44px;z-index: 100;background: #fff;}
+.nav-wraper .swiper-slide{text-align: center;font-size: 16px;}
+.icon-category{width:38px;height:24px;border-left:1px #d8d8d8 solid;display: block;position: absolute;right: 0;top: 9px;z-index: 101;background: url('../assets/images/icon/category.png') no-repeat #fff center;background-size: 13px 14px;}
 </style>
 
 

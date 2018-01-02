@@ -13,7 +13,7 @@
 
 <template>
   <div class="container">
-    <div class="search-wraper">
+    <div class="search">
       <a href="#">
         <form>
           <div class="placeholder">

@@ -38,6 +38,6 @@
 </script>
 
 <style scoped>
-  a{display: inline-block;padding: 0 .2rem;color: #333;}
+  a{display: inline-block;color: #333;font-size: 16px;}
   .active {color: #FE312A;border-bottom: 1px #FE312A solid;} 
 </style>

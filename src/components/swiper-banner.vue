@@ -2,7 +2,6 @@
     <swiper :options="swiperOption">
         <swiper-slide><img src="../assets/images/img1.jpg"></swiper-slide>
         <swiper-slide><img src="../assets/images/img2.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/images/img3.jpg"></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
     </swiper> 
 </template>
