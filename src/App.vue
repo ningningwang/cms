@@ -1,16 +1,3 @@
-<!-- <template>
-  <div class="container">
-    <ul>
-      <li>
-        <v-link href="/">Home</v-link>
-        <v-link href="/about">About</v-link>
-      </li>
-    </ul>
-
-    <slot></slot>
-  </div>
-</template> -->
-
 <template>
   <div class="container">
     <div class="search">
@@ -25,9 +12,7 @@
       </a>
     </div>
     <swiperNav></swiperNav>
-    <div class="banner-wraper">
-      <swiperBanner></swiperBanner>
-    </div>
+    <swiperBanner></swiperBanner>
     <div class="topic-wraper">
       <div class="left"><a href="#"><img src="./assets/images/1.png"></a></div>
       <div class="right">
@@ -38,18 +23,15 @@
         </div>
       </div>
     </div>
+    <div class="divide"></div>
+    <div class="product-list">
+      <div class="sort" id="sort">
+        
+      </div> 
+      
 
-    <div class="list-wraper">
-      <ul>
-        <li>
-          <v-link href="/">精选</v-link>
-          <v-link href="/about">销量</v-link>
-          <v-link href="/about">最新</v-link>
-          <v-link href="/about">价格</v-link>
-        </li>
-      </ul>
-      <slot></slot>
     </div>
+    
   </div>
 </template>
 <script>

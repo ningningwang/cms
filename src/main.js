@@ -11,9 +11,9 @@ const app = new Vue({
   computed: {
     ViewComponent () {
       const matchingView = router[this.currentRoute]
-      return matchingView
-        ? require('./pages/' + matchingView + '.vue')
-        : require('./pages/404.vue')
+      return require('./pages/' + matchingView + '.vue')
+        // ? require('./pages/' + matchingView + '.vue')
+        // : require('./pages/404.vue')
     }
   },
   render (h) {
