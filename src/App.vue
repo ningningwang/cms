@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- 搜索栏 -->
     <div class="search">
       <a href="#">
         <form>
@@ -11,7 +12,9 @@
         </form>
       </a>
     </div>
+    <!-- 菜单栏 -->
     <swiperNav></swiperNav>
+    <!-- 轮播图 -->
     <swiperBanner></swiperBanner>
     <div class="topic-wraper">
       <div class="left"><a href="#"><img src="./assets/images/1.png"></a></div>
@@ -24,13 +27,8 @@
       </div>
     </div>
     <div class="divide"></div>
-    <div class="product-list">
-      <div class="sort" id="sort">
-        
-      </div> 
-      
-
-    </div>
+    <!-- 产品列表 -->
+    <myTabs></myTabs>
     
   </div>
 </template>
@@ -38,12 +36,14 @@
   require('./assets/scss/app.scss') 
   import VLink from './components/VLink.vue'
   import swiperNav from './components/swiper-nav.vue'
+  import myTabs from './components/sort.vue'
   import swiperBanner from './components/swiper-banner.vue'
   export default {
     components: {
       VLink,
       swiperNav,
-      swiperBanner
+      swiperBanner,
+      myTabs
     }
   }
 </script>

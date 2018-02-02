@@ -1,18 +1,38 @@
 <template>
-    <s-box class="s-box">精选</s-box>
-    <s-box class="s-box">销量</s-box>
-    <s-box class="s-box">最新</s-box>
-    <s-box class="s-box">
-      <span>价格</span>
-      <span>
-        <i class="asc"></i>
-        <i class="dsc"></i>
-      </span>
-    </s-box>
+	<div class="my-tabs">
+      <div class="tabs-bar">
+        <div class="tabs-bar-nav">
+          <div class="tabs-tab" v-for="tab in tabList"
+          :class="[tabIndex == tab.index ? 'tabs-active' : '']"
+          @click="changeTab(tab)">
+            {{tab.name}}
+          </div>
+        </div>
+      </div>
+      <div class="tabs-content">
+        <slot></slot>
+      </div>
+  </div>
 </template>
 <script type="text/javascript">
-	new Vue({
-	  el: '#sort',
-	  // 选项
-	})
+	export default {
+	  name: 'MyTabs',
+	  props:
+	  {
+	    tabList: Array,
+	    tabIndex: Number
+	  },
+	  data () {
+	    return {
+	    }
+	  },
+	  methods: {
+	    changeTab: function (tab) {
+	      this.$emit('changeTab', tab)
+	    }
+	  },
+	  components: {
+	     myTabs
+	  }
+	}
 </script>
